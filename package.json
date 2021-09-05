@@ -1,0 +1,51 @@
+{
+  "name": "nvrom",
+  "displayName": "NVROM Language Support",
+  "description": "Adds support for nvrom (.nvr) files to visual studio code!",
+  "publisher": "AirReps",
+  "version": "0.1.1",
+  "license": "gpl-3.0",
+  "icon": "data/icon.png",
+  "repository": "https://github.com/AirReps/vscode-nvrom-support",
+  "engines": {
+    "vscode": "^1.31.0"
+  },
+  "main": "./src/main.js",
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:nvr"
+  ],
+  "contributes": {
+    "capabilities": {
+      "hoverProvider": "true"
+    },
+    "languages": [
+      {
+        "id": "nvr",
+        "aliases": [
+          "NVROM",
+          "nvr"
+        ],
+        "extensions": [
+          ".nvr"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nvr",
+        "scopeName": "source.nvrom",
+        "path": "./syntaxes/nvr.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "nvr",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}
