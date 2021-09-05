@@ -3,7 +3,7 @@
   "displayName": "NVROM Language Support",
   "description": "Adds support for nvrom (.nvr) files to visual studio code!",
   "publisher": "AirReps",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "gpl-3.0",
   "icon": "data/icon.png",
   "repository": "https://github.com/AirReps/vscode-nvrom-support",

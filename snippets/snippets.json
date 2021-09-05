@@ -9,6 +9,16 @@
 		],
 		"description": "Make NVR specifically compatible with the left audio channel."
 	},
+	"Set Name Of Device": {
+		"prefix": "defaultName",
+		"body": [
+			"$2",
+            "// Default Device Name",
+            "&0xF202 = $1",
+			"$2"
+		],
+		"description": "Set the default name of the device."
+	},
     "Right Audio Channel": {
 		"prefix": "right",
 		"body": [
