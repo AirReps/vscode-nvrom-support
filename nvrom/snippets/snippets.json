@@ -1,0 +1,22 @@
+{
+	"Left Audio Channel": {
+		"prefix": "left",
+		"body": [
+			"$2",
+            "// AUDIO_CHANNEL_SETTING",
+            "&0xF2B5 = 0001010214",
+			"$2$1"
+		],
+		"description": "Make NVR specifically compatible with the left audio channel."
+	},
+    "Right Audio Channel": {
+		"prefix": "right",
+		"body": [
+			"$2",
+            "// AUDIO_CHANNEL_SETTING",
+            "&0xF2B5 = 0002010214",
+			"$2$1"
+		],
+		"description": "Make NVR specifically compatible with the right audio channel."
+	}
+}
